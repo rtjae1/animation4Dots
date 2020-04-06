@@ -39,12 +39,28 @@ body {
 .content span:nth-child(1) {
   background: var(--secondaryColor);
   animation: animate 2s linear infinite;
+  box-shadow: 0 0 25px;
 }
 
 .content span:nth-child(2) {
   background: var(--tertiaryColor);
   animation: animate 2s linear infinite;
   animation-delay: .5s;
+  box-shadow: 0 0 25px var(--tertiaryColor);
+}
+
+.content span:nth-child(3) {
+  background: var(--secondaryColor);
+  animation: animate 2s linear infinite;
+  animation-delay: 1s;
+  box-shadow: 0 0 25px;
+}
+
+.content span:nth-child(4) {
+  background: var(--tertiaryColor);
+  animation: animate 2s linear infinite;
+  animation-delay: 1.5s;
+  box-shadow: 0 0 25px var(--tertiaryColor);
 }
 
 @keyframes animate {
